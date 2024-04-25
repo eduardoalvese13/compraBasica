@@ -1,5 +1,10 @@
 public class Product {
 
+  int pdEstoque;
+  double pdPrice;
+  boolean isProduct;
+
+  
   public boolean isProduct (int codProduct) {
     return(codProduct%10 == 0 && codProduct > 0);
     // Considerando que ainda não aprendi banco de dados, o programa faz uma análise de existência de um código de produto hipotética a partir de um código simples: Todo código múltiplo de 10 existe no 'banco de dados', caso contrário, envia a mensagem negativa.
