@@ -4,12 +4,19 @@ public class shopCart {
 
   Scanner teclado = new Scanner(System.in);
   Product p = new Product();
+
+  int[][] productsCart;
+  double totalCerto;
   
   public void resumeCart (int[][] cart, int qtd, double total) {
 
+    if (qtd==0) {
+      System.out.println(">>>>> CARRINHO VAZIO <<<<<");
+    } else {
     System.out.println(">>>>> SEU CARRINHO <<<<<");
+    }
     System.out.println("");
-    double totalCerto = 0;
+    totalCerto = 0;
     for (int i = 0; i < qtd; i++) {
       System.out.println("Produto: "+ cart[i][0] + " X " + cart[i][1]+"und = R$"+(p.getPrice(cart[i][0])*cart[i][1]));
 
