@@ -74,5 +74,6 @@ public class Main {
     }
 
     cart.payment();
+    teclado.close();
   }
 }

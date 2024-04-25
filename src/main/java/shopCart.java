@@ -57,5 +57,6 @@ public class shopCart {
 
     System.out.println(">>>>>> CARREGANDO...");
     System.out.println("Compra realizada com sucesso! Vote Sempre :)");
+    teclado.close();
   }
 }
