@@ -36,6 +36,8 @@ public class Main {
                   qtdItems++;
                   totalPurchase = totalPurchase + (qtdProduct * produto.getPrice(codProduct));
 
+                  // Adição de produto e respectivas unidades à matriz de carrinho.
+
                   System.out.println(">> Produto adicionado ao carrinho!");
                   System.out.println(">> Deseja adicionar mais produtos? (Y/N)");
                   decision = teclado.next();
