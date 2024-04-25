@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.util.Scanner;
+
   
 public class Client {
 
@@ -6,6 +8,7 @@ public class Client {
 
   shopCart carrinho = new shopCart();
   Random rd = new Random();
+  Scanner teclado = new Scanner(System.in);
   
   public boolean getCPF() {
     return rd.nextBoolean();
@@ -17,13 +20,13 @@ public class Client {
   public void cadastrar(int[][] cart, int qtd, double total) {
     System.out.println(">>>>> CADASTRO <<<<<");
     System.out.println(">> Digite seu nome: ");
-    nameClient = System.console().readLine();
+    nameClient = teclado.next();
     System.out.println(">> Digite seu e-mail: ");
-    emailClient = System.console().readLine();
+    emailClient = teclado.next();
     System.out.println(">> Digite seu telefone: ");
-    phoneClient = System.console().readLine();
+    phoneClient = teclado.next();
     System.out.println("_______________________");
-    System.out.println(">> Prazer em conhecê-lo(a) " + nameClient + "! Desconto de 1ª compra aplicado:");
+    System.out.println(">> Prazer em conhecê-lo(a), " + nameClient + "! Desconto de 1ª compra aplicado:");
     carrinho.resumeCart(cart, qtd, total);
     System.out.println("");
   }

@@ -17,7 +17,7 @@ public class Main {
     String decision = teclado.next();
 
     do {
-
+      if (decision.equals("Y")) {
         if (qtdItems < 10) {
           
           System.out.println(">> Digite o código do produto:");
@@ -57,7 +57,7 @@ public class Main {
         } else {
           System.out.println(">> Seu carrinho está cheio! Finalizando compra...");
         }
-
+      } else {break;}
     } while (decision.equals("Y")); 
 
     System.out.println(">> Finalizando compra...");
